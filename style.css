@@ -638,7 +638,7 @@ h1 {
         flex-shrink: 0;
     }
     #logo{
-        left: 48px;
+        left: 32px;
         transform: scale(.9);
         top: 50px;
     }
@@ -648,8 +648,6 @@ h1 {
     }
     .services__image {
         position: absolute;
-        
-        
         width: 100%;
         height: auto;
         transition: transform linear .4s;
