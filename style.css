@@ -503,6 +503,7 @@ h1 {
     transition: all ease-in-out .4s;
     transform: translateX(100%);
     min-width: 320px;
+    max-width: 95%;
     position: fixed;
     z-index: 5;
     right: 0;

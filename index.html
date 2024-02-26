@@ -161,10 +161,11 @@
             var element = document.getElementById("pages-menu");
             element.classList.toggle("visible");
         }
+
         function scrollHorizontally(e) {
             e = window.event || e;
             var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-            var scrollSpeed = 10;
+            var scrollSpeed = 12;
             document.documentElement.scrollLeft -= (delta * scrollSpeed);
             document.body.scrollLeft -= (delta * scrollSpeed);
             }
@@ -178,9 +179,25 @@
             // IE 6/7/8
             window.attachEvent("onmousewheel", scrollHorizontally);
         }
+
         function scrollFunc(element){
             element.scrollIntoView({ behavior: "smooth"});
         }
+
+
+        const buttonGroup = document.getElementById("main-menu"); 
+        let prevButton = document.querySelector(".main-menu__item--active");
+        
+
+        const buttonPressed = (e) => {
+            
+        if(e.target.nodeName === 'LI') {
+            prevButton.classList.remove('main-menu__item--active');
+            e.target.classList.add('main-menu__item--active'); // Add .active CSS Class
+            prevButton = e.target;
+        }
+        }
+        buttonGroup.addEventListener("click", buttonPressed);
         
     </script>
 </body>
