@@ -45,17 +45,17 @@
 
 
     <ul id="main-menu" class="main-menu">
-        <li class="main-menu__item main-menu__item--active">ГОЛОВНА</li>
+        <li class="main-menu__item main-menu__item--active" onclick="scrollFunc(document.getElementById('first-slide'))">ГОЛОВНА</li>
         <li class="main-menu__item">ІСТОРIЯ</li>
         <li class="main-menu__item">ОБʼЄКТИ</li>
-        <li class="main-menu__item">ПОСЛУГИ</li>
+        <li class="main-menu__item" onclick="scrollFunc(document.getElementById('fourth-slide'))">ПОСЛУГИ</li>
         <li class="main-menu__item">АФІША</li>
         <li class="main-menu__item">ВАРТО ВIДВIДАТИ</li>
         <li class="main-menu__item">КОНТАКТИ</li>
     </ul>
 
 
-    <section class="section first-slide">
+    <section id="first-slide" class="section first-slide">
         <article class="content">
             <h1>КАМ'ЯНЕЦЬ-ПОДІЛЬСЬКИЙ <br>ДЕРЖАВНИЙ ІСТОРИЧНИЙ <br>МУЗЕЙ-ЗАПОВІДНИК</h1>
         </article>
@@ -66,7 +66,7 @@
 
     
     
-    <section class="section fourth-slide">
+    <section id="fourth-slide" class="section fourth-slide">
         <article class="services services__item-1">
             <img class="services__image" src="img/img-service-1.png" alt="img">
             <div class="services__container">
@@ -158,9 +158,30 @@
 
     <script>
         function menuToggle() {
-        var element = document.getElementById("pages-menu");
-        element.classList.toggle("visible");
-      }
+            var element = document.getElementById("pages-menu");
+            element.classList.toggle("visible");
+        }
+        function scrollHorizontally(e) {
+            e = window.event || e;
+            var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+            var scrollSpeed = 10;
+            document.documentElement.scrollLeft -= (delta * scrollSpeed);
+            document.body.scrollLeft -= (delta * scrollSpeed);
+            }
+
+            if (window.addEventListener) {
+            // IE9, Chrome, Safari, Opera
+            window.addEventListener("mousewheel", scrollHorizontally, false);
+            // Firefox
+            window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+            } else {
+            // IE 6/7/8
+            window.attachEvent("onmousewheel", scrollHorizontally);
+        }
+        function scrollFunc(element){
+            element.scrollIntoView({ behavior: "smooth"});
+        }
+        
     </script>
 </body>
 </html>
