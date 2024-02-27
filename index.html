@@ -8,6 +8,10 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Кам'янець-Подільський державний історичний музей-заповідник</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -44,66 +48,66 @@
 
 
 
-    <ul id="main-menu" class="main-menu">
-        <li class="main-menu__item main-menu__item--active" onclick="scrollFunc(document.getElementById('first-slide'))">ГОЛОВНА</li>
-        <li class="main-menu__item">ІСТОРIЯ</li>
-        <li class="main-menu__item">ОБʼЄКТИ</li>
-        <li class="main-menu__item" onclick="scrollFunc(document.getElementById('fourth-slide'))">ПОСЛУГИ</li>
-        <li class="main-menu__item">АФІША</li>
-        <li class="main-menu__item">ВАРТО ВIДВIДАТИ</li>
-        <li class="main-menu__item">КОНТАКТИ</li>
-    </ul>
+   
+
+    <main class="page">
+        <section data-title="ГОЛОВНА" class="section first-slide">
+            <article class="content">
+                <h1>КАМ'ЯНЕЦЬ-ПОДІЛЬСЬКИЙ <br>ДЕРЖАВНИЙ ІСТОРИЧНИЙ <br>МУЗЕЙ-ЗАПОВІДНИК</h1>
+            </article>
+
+            <article class="mid-slide-notion">
+                <p>Усіх, хто допитливий, не байдужий до історії та вміє цінувати прекрасне, ми запрошуємо відвідати Кам'янець-Подільський державний історичний музей-заповідник, де ви відкриєте для себе новий світ.</p>
+            </article>
+        </section>
+
+        <section data-title="ПОСЛУГИ" class="section fourth-slide">
+            <article class="services services__item-1">
+                <img class="services__image" src="img/img-service-1.png" alt="img">
+                <div class="services__container">
+                    <img src="img/service-1.svg" width="108" height="108" alt="service">
+                    <h2 class="services__title">Шлюб за добу</h2>
+                    <p class="services__text">Швидкий та зручний спосіб реєстрації шлюбу за 24 години у стінах музею чи на території Старого замку!</p>
+                    <button class="services__button button">ДОКЛАДНІШЕ</button>
+                </div>
+            </article>
+            <article class="services services__item-2">
+                <img class="services__image" src="img/img-service-2.png" alt="img">
+                <div class="services__container">
+                    <img src="img/service-2.svg" width="108" height="108" alt="service">
+                    <h2 class="services__title">Вечірня екскурсія</h2>
+                    <p class="services__text">Гіди у костюмах XVII-XVIII ст. проведуть вас підземеллями та відкриють таємниці Старого замку.</p>
+                    <button class="services__button button">ДОКЛАДНІШЕ</button>
+                </div>
+            </article>
+            <article class="services services__item-3">
+                <img class="services__image" src="img/img-service-3.png" alt="img">
+                <div class="services__container">
+                    <img src="img/service-3.svg" width="108" height="108" alt="service">
+                    <h2 class="services__title">Інтерактивні заходи</h2>
+                    <p class="services__text">Пропонуємо різноманітні розваги для дітей та дорослих - майстер-класи, квести, вечірні екскурсії!</p>
+                    <button class="services__button button">ДОКЛАДНІШЕ</button>
+                </div>
+            </article>
+            <article class="services services__item-4">
+                <img class="services__image" src="img/img-service-4.png" alt="img">
+                <div class="services__container">
+                    <img src="img/service-4.svg" width="108" height="108" alt="service">
+                    <h2 class="services__title">Єдиний квиток</h2>
+                    <p class="services__text">Скористайтесь можливістю відвідати всі об'єкти музею та зекономити сімейний бюджет!</p>
+                    <button class="services__button button">ДОКЛАДНІШЕ</button>
+                </div>
+            </article>
+        </section>
+      </main>
+
+   
 
 
-    <section id="first-slide" class="section first-slide">
-        <article class="content">
-            <h1>КАМ'ЯНЕЦЬ-ПОДІЛЬСЬКИЙ <br>ДЕРЖАВНИЙ ІСТОРИЧНИЙ <br>МУЗЕЙ-ЗАПОВІДНИК</h1>
-        </article>
-    </section>
-    <section class="mid-slide-notion">
-        <p>Усіх, хто допитливий, не байдужий до історії та вміє цінувати прекрасне, ми запрошуємо відвідати Кам'янець-Подільський державний історичний музей-заповідник, де ви відкриєте для себе новий світ.</p>
-    </section>
 
     
     
-    <section id="fourth-slide" class="section fourth-slide">
-        <article class="services services__item-1">
-            <img class="services__image" src="img/img-service-1.png" alt="img">
-            <div class="services__container">
-                <img src="img/service-1.svg" width="108" height="108" alt="service">
-                <h2 class="services__title">Шлюб за добу</h2>
-                <p class="services__text">Швидкий та зручний спосіб реєстрації шлюбу за 24 години у стінах музею чи на території Старого замку!</p>
-                <button class="services__button button">ДОКЛАДНІШЕ</button>
-            </div>
-        </article>
-        <article class="services services__item-2">
-            <img class="services__image" src="img/img-service-2.png" alt="img">
-            <div class="services__container">
-                <img src="img/service-2.svg" width="108" height="108" alt="service">
-                <h2 class="services__title">Вечірня екскурсія</h2>
-                <p class="services__text">Гіди у костюмах XVII-XVIII ст. проведуть вас підземеллями та відкриють таємниці Старого замку.</p>
-                <button class="services__button button">ДОКЛАДНІШЕ</button>
-            </div>
-        </article>
-        <article class="services services__item-3">
-            <img class="services__image" src="img/img-service-3.png" alt="img">
-            <div class="services__container">
-                <img src="img/service-3.svg" width="108" height="108" alt="service">
-                <h2 class="services__title">Інтерактивні заходи</h2>
-                <p class="services__text">Пропонуємо різноманітні розваги для дітей та дорослих - майстер-класи, квести, вечірні екскурсії!</p>
-                <button class="services__button button">ДОКЛАДНІШЕ</button>
-            </div>
-        </article>
-        <article class="services services__item-4">
-            <img class="services__image" src="img/img-service-4.png" alt="img">
-            <div class="services__container">
-                <img src="img/service-4.svg" width="108" height="108" alt="service">
-                <h2 class="services__title">Єдиний квиток</h2>
-                <p class="services__text">Скористайтесь можливістю відвідати всі об'єкти музею та зекономити сімейний бюджет!</p>
-                <button class="services__button button">ДОКЛАДНІШЕ</button>
-            </div>
-        </article>
-    </section>
+    
 
     <aside id="pages-menu">
         <button id="toggle-menu" onclick="menuToggle()" class="button">x</button>
@@ -161,44 +165,40 @@
             var element = document.getElementById("pages-menu");
             element.classList.toggle("visible");
         }
-
-        function scrollHorizontally(e) {
-            e = window.event || e;
-            var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-            var scrollSpeed = 12;
-            document.documentElement.scrollLeft -= (delta * scrollSpeed);
-            document.body.scrollLeft -= (delta * scrollSpeed);
-            }
-
-            if (window.addEventListener) {
-            // IE9, Chrome, Safari, Opera
-            window.addEventListener("mousewheel", scrollHorizontally, false);
-            // Firefox
-            window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
-            } else {
-            // IE 6/7/8
-            window.attachEvent("onmousewheel", scrollHorizontally);
-        }
-
-        function scrollFunc(element){
-            element.scrollIntoView({ behavior: "smooth"});
-        }
-
-
-        const buttonGroup = document.getElementById("main-menu"); 
-        let prevButton = document.querySelector(".main-menu__item--active");
         
 
-        const buttonPressed = (e) => {
+        $(document).ready(function(){
+            $('.page').slick({
+                dots: true,
+                arrows: false,
+                verticalSwiping: true,
+                mobileFirst: true,
+                speed: 1300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                customPaging: function(slider, i) { 
+                    return $(slider.$slides[i]).attr('data-title');
+                }
+                
+            });
+        });
+
+        $(document).ready(function(){
+        $('.page').on('wheel', (function(e) {
+            e.preventDefault();
+            if (e.originalEvent.deltaY < 0) {
+                $(this).slick('slickNext');
+            } 
+            if (e.originalEvent.deltaY > 0) {
+                $(this).slick('slickPrev');
+            } 
             
-        if(e.target.nodeName === 'LI') {
-            prevButton.classList.remove('main-menu__item--active');
-            e.target.classList.add('main-menu__item--active'); // Add .active CSS Class
-            prevButton = e.target;
-        }
-        }
-        buttonGroup.addEventListener("click", buttonPressed);
-        
+            }));
+        });
+
     </script>
+
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>
