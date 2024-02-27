@@ -258,7 +258,6 @@ h1 {
 .section {
     width: 100%;
     position: relative;
-    max-height: 100vh;
 }
 
 .section .content {
@@ -692,12 +691,18 @@ h1 {
     #logo, body > .decor, .services__text, .mid-slide-notion p{
         display: none;
     }
+    .services {
+        max-height: 50vh;
+    }
+    .services__container{
+        padding: 15px;
+    }
     .services__title{
         font-size: 16px;
         margin: 20px 0;
     }
-    .services__container{
-        padding: 15px;
+    .services:hover .services__container {
+        padding-top: 15px;
     }
     #social{
         top: 16px;
@@ -711,8 +716,6 @@ h1 {
     .mid-slide-notion:before{
         left: 40px;
     }
-    .services:hover .services__container {
-        padding-top: 15px;
-    }
+
   }
 
