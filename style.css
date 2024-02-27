@@ -522,7 +522,7 @@ h1 {
 }
 
 #pages-menu .container{
-    max-height: calc(100vh - 64px);
+    max-height: calc(100vh - 48px);
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
