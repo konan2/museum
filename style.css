@@ -590,6 +590,10 @@ h1 {
     transform: translateX(0);
 }
 
+#pages-menu .social-links{
+    opacity: 0.7;
+}
+
 /* Animation */
 
 @keyframes arrow {
