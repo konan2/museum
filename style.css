@@ -641,7 +641,7 @@ h1 {
         top: auto;
         min-height: auto;
         width: 100%;
-        padding: 48px 64px 80px 64px;
+        padding: 48px 0 80px 0;
         background: none;
     }
     .mid-slide-notion:before{
