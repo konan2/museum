@@ -692,7 +692,7 @@ h1 {
 
   @media only screen and (max-width: 480px) {
 
-    #logo, .decor, .services__text, .mid-slide-notion{
+    #logo, body > .decor, .services__text, .mid-slide-notion{
         display: none;
     }
     .services__title{
@@ -702,6 +702,12 @@ h1 {
     .services__container{
         padding-left: 15px;
         padding-right: 15px;
+    }
+    #social{
+        top: 6px;
+    }
+    #menu-btn{
+        font-size: 0;
     }
   }
 
