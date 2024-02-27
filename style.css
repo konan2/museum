@@ -698,7 +698,15 @@ h1 {
         display: none;
     }
     .services__title{
-        font-size: 20px;
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .services__container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .services__text{
+        display: none;
     }
   }
 
