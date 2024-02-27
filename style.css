@@ -423,12 +423,19 @@ h1 {
     transition: all linear .4s;
 }
 
-.services__button:hover {
-    padding-left: 55px;
-    padding-right: 55px;
-    background-color: #ACA28F;
-    color: #FFFFFF;
-}
+@media (hover: hover) {
+    .services__button:hover {
+        padding-left: 55px;
+        padding-right: 55px;
+        background-color: #ACA28F;
+        color: #FFFFFF;
+    }
+    .services__button:hover::before {
+        top: 0;
+        bottom: 0;
+    }
+  }
+
 
 .services__button:before {
     content: '';
@@ -442,10 +449,7 @@ h1 {
     transition: all linear .4s;
 }
 
-.services__button:hover::before {
-    top: 0;
-    bottom: 0;
-}
+
 
 
 
@@ -711,6 +715,9 @@ h1 {
     }
     .mid-slide-notion:before{
         left: 40px;
+    }
+    .services:hover .services__container {
+        padding-top: 15px;
     }
   }
 
