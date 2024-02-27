@@ -709,5 +709,9 @@ h1 {
     #menu-btn{
         font-size: 0;
     }
+    .slick-slide img{
+        max-width: 60px;
+        height: auto;
+    }
   }
 
