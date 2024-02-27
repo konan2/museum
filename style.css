@@ -547,6 +547,10 @@ h1 {
     padding-right: 24px;
 }
 
+#pages-menu .social-links{
+    width: 32px;
+    height: 32px;
+}
 
 .backdrop{
     display: none;
@@ -681,9 +685,6 @@ h1 {
         width: 100%;
         height: auto;
         transition: transform linear .4s;
-    }
-    .slick-track{
-        
     }
   }
 
