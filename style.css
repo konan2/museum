@@ -698,8 +698,7 @@ h1 {
         margin: 20px 0;
     }
     .services__container{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 15px;
     }
     #social{
         top: 16px;
