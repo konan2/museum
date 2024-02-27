@@ -561,7 +561,12 @@ h1 {
 }
 
 .pages-menu-header{
-    padding: 40px 40px 30px;
+    padding: 40px 20px;
+}
+
+.pages-menu-header .social-links{
+    height: 32px;
+    width: 32px;
 }
 
 #pages-menu .social-controls{
@@ -573,7 +578,7 @@ h1 {
 #pages-menu #toggle-menu{
     position: absolute;
     z-index: 2;
-    left: 13px;
+    right: 13px;
     top: 13px;
     padding: 10px;
     font-size: 18px;
@@ -587,7 +592,7 @@ h1 {
     min-height: 40px;
     padding-top: 16px;
     padding-bottom: 16px;
-    margin: 0 40px;
+    margin: 0 30px;
 }
 
 
