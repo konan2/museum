@@ -694,9 +694,6 @@ h1 {
     #menu-btn{
         font-size: 0;
     }
-    .first-slide h1{
-        font-size: 24px;
-    }
     .mid-slide-notion{
        display: none;
     }
