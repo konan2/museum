@@ -8,7 +8,6 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Кам'янець-Подільський державний історичний музей-заповідник</title>
-    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -168,10 +167,10 @@
         
 
         $(document).ready(function(){
+            
             $('.page').slick({
                 dots: true,
                 arrows: false,
-                verticalSwiping: true,
                 mobileFirst: true,
                 speed: 1300,
                 slidesToShow: 1,
@@ -181,21 +180,18 @@
                 }
                 
             });
-        });
 
-        $(document).ready(function(){
-        $('.page').on('wheel', (function(e) {
-            e.preventDefault();
-            if (e.originalEvent.deltaY < 0) {
-                $(this).slick('slickNext');
-            } 
-            if (e.originalEvent.deltaY > 0) {
-                $(this).slick('slickPrev');
-            } 
-            
+            $('.page').on('wheel', (function(e) {
+                e.preventDefault();
+                if (e.originalEvent.deltaY < 0) {
+                    $(this).slick('slickNext');
+                } 
+                if (e.originalEvent.deltaY > 0) {
+                    $(this).slick('slickPrev');
+                } 
+                
             }));
         });
-
     </script>
 
 

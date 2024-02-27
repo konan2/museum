@@ -712,5 +712,8 @@ h1 {
     .mid-slide-notion{
         padding: 40px;
     }
+    .mid-slide-notion:before{
+        left: 40px;
+    }
   }
 
