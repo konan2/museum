@@ -646,7 +646,7 @@ h1 {
     }
     .mid-slide-notion:before{
         bottom: 32px;
-        left: 80px;
+        left: 0;
     }
     .first-slide .content{
         margin: 0;
