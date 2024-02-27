@@ -113,12 +113,14 @@ h1 {
 }
 
 #logo {
+    display: block;
     color: #DAC7A3;
     font-size: 13px;
     line-height: 13px;
     text-decoration: none;
     top: 34px;
     left: 71px;
+    overflow: hidden;
 }
 
 
@@ -668,8 +670,6 @@ h1 {
     }
 
     #logo{
-        left: 32px;
-        transform: scale(.9);
         top: 50px;
     }
     #social{
@@ -698,6 +698,9 @@ h1 {
     }
     .mid-slide-notion{
        display: none;
+    }
+    #logo{
+        width: 140px;
     }
   }
 
