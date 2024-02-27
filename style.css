@@ -681,8 +681,6 @@ h1 {
         top: 56px;
     }
     .services__image {
-        position: absolute;
-        width: 100%;
         height: auto;
         transition: transform linear .4s;
     }
